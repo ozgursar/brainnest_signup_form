@@ -29,3 +29,8 @@
 .thank-you-contactus {
     padding-top: 1em;
 }
+
+.thank-you-contactus a {
+  color: var(--accent);
+  text-decoration: none;
+}
