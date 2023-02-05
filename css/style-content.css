@@ -2,14 +2,22 @@
   padding: 30px;
 }
 
-.content-header h2 {
+.content-header {
   max-width: 480px;
+}
+
+.content-header h2 {
   margin-bottom: 25px;
 }
 
 #signup_form {
   display: grid;
   grid-template-rows: 1fr auto auto;
+}
+
+#login_form {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .form-main {

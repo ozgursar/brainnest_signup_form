@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Paradise Travel Agency - Login</title>
+</head>
+<body>
+  <main>
+    <aside class="login">
+      <section class="logo_container">
+        <a href="./">
+          <img src="./images/logo.svg" width="70" height="70" alt="Visit Manarola Logo">
+          <h1>PARADISE TRAVEL AGENCY</h1>
+        </a>
+      </section>
+      <section class="credits">
+        <small>Photo by <a href="https://unsplash.com/@hamsull?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sam Hull</a> on <a href="https://unsplash.com/photos/KCJKsJPe9pQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </small>
+      </section>
+    </aside>
+    <article class="content">
+      <section class="content-header">
+        <h2>Welcome to Paradise Travel Agency!</h2>
+        <h3>Please login below to to access latest travel destinations and amazing packages customized for you.</h3>
+      </section>
+      <section>
+        <form action="https://httpbin.org/post" method="post" id="login_form">
+          <div class="form-main">
+            <div class="input-fields">
+              <div class="input-group">
+                <label for="first_name">Username*</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="first_name"
+                  pattern="^[a-zA-Z]{2,}\s?([a-zA-Z]{2,})?"
+                  title="Min. 2 letters. White space allowed once."
+                  autocomplete="off"
+                  placeholder="Min. 2 letters. White space allowed once."
+                  required>
+                  <img src="./images/check.svg" alt="Valid icon" class="check">
+                  <small class="incorrect">* Please type only letters</small>
+              </div>
+              <div class="input-group">
+                <label for="password">Password*</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Min.8 - Max.20 characters"
+                  minlength="8"
+                  maxlength="20"
+                  required>
+                  <img src="./images/check.svg" alt="Valid icon" class="check">
+                <small class="error_message"></small>
+              </div>
+            </div>
+          </div>
+          <div class="form-footer">
+            <button>Login</button>
+            <small>Haven't registered before? <a href="./index.html">Signup</a></small>
+          </div>
+        </form>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
