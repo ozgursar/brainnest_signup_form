@@ -27,25 +27,25 @@
     <article class="content">
       <section class="content-header">
         <h2>Welcome to Paradise Travel Agency!</h2>
-        <h3>Please login below to to access latest travel destinations and amazing packages customized for you.</h3>
+        <h3>Please login below to access latest travel destinations and amazing packages customized for you.</h3>
       </section>
       <section>
         <form action="https://httpbin.org/post" method="post" id="login_form">
           <div class="form-main">
             <div class="input-fields">
               <div class="input-group">
-                <label for="first_name">Username*</label>
+                <label for="email">Email*</label>
                 <input
-                  type="text"
-                  name="username"
-                  id="first_name"
-                  pattern="^[a-zA-Z]{2,}\s?([a-zA-Z]{2,})?"
-                  title="Min. 2 letters. White space allowed once."
+                  type="email"
+                  name="email_field"
+                  id="email"
+                  pattern="(?![_.-])((?![_.-][_.-])[a-zA-Z\d_.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}"
+                  inputmode="email"
                   autocomplete="off"
-                  placeholder="Min. 2 letters. White space allowed once."
+                  placeholder="yourname@domain.com"
                   required>
                   <img src="./images/check.svg" alt="Valid icon" class="check">
-                  <small class="incorrect">* Please type only letters</small>
+                  <small class="incorrect">* Please enter valid email address</small>
               </div>
               <div class="input-group">
                 <label for="password">Password*</label>
@@ -53,14 +53,15 @@
                   type="password"
                   name="password"
                   id="password"
-                  placeholder="Min.8 - Max.20 characters"
+                  placeholder="Enter your password"
                   minlength="8"
                   maxlength="20"
                   required>
                   <img src="./images/check.svg" alt="Valid icon" class="check">
-                <small class="error_message"></small>
+                <small class="incorrect"></small>
               </div>
             </div>
+            <img src="./images/login.svg" class="login_image" alt="Login image">
           </div>
           <div class="form-footer">
             <button>Login</button>

@@ -15,11 +15,6 @@
   grid-template-rows: 1fr auto auto;
 }
 
-#login_form {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .form-main {
   padding: 25px 30px 50px 30px;
   background-color: var(--content-body-background);
@@ -151,4 +146,24 @@ button:hover {
   font-size: 0.75em;
   color: red;
   padding-top: 4px;
+}
+
+
+#login_form .form-main {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#login_form .input-fields {
+  width: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: start;
+}
+
+.login_image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
 }
